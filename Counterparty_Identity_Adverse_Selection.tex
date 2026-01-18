@@ -209,7 +209,7 @@ All measures are in basis points from the maker's perspective: positive AS indic
 \[
 \text{Taker Markout} = \underbrace{d(M_{t+h} - M_t)}_{\text{Mid-move (information)}} - \underbrace{\frac{1}{2}S_t}_{\text{Half-spread (cost)}}
 \]
-The \textit{mid-move} isolates directional price prediction---precisely the adverse selection component. A taker with positive mid-move but negative markout still imposes adverse selection on the maker; they just don't profit net of spread. The classification criterion (Section~\ref{sec:midmove_robustness}) uses mid-move directly to isolate information from transaction costs.
+The \textit{mid-move} isolates directional price prediction---precisely the adverse selection component. A taker with positive mid-move but negative markout still imposes adverse selection on the maker; they just don't profit net of spread. The classification criterion (Section~\ref{sec:markout_robustness}) uses mid-move directly to isolate information from transaction costs.
 \end{tcolorbox}
 
 \textbf{Out-of-sample classification.} To avoid mechanical sorting concerns (classifying and measuring on the same trades), I use a strictly out-of-sample design:

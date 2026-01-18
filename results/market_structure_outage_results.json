@@ -1,0 +1,113 @@
+{
+  "description": "Market structure during July 29, 2025 API outage",
+  "data_sources": {
+    "normal_hours": "1,575 hours across 66 days (July 27 - Sep 30, 2025)",
+    "outage_hour": "July 29, 2025, 14:00-15:00 UTC"
+  },
+  "normal_hours": {
+    "n_unique_makers": 2266,
+    "hhi_fills": 0.071,
+    "top_10_fill_share": 0.616,
+    "top_5_best_price_fill_share": 0.783,
+    "top_5_best_price_fill_share_ask": 0.769,
+    "top_5_fill_frequency_share": 0.824,
+    "spread_bps": 3.2,
+    "quote_updates_per_min": 106.3,
+    "top_mpsc_tob_rate": 0.464
+  },
+  "outage_hour": {
+    "n_unique_makers": 4174,
+    "hhi_fills": 0.062,
+    "top_10_fill_share": 0.604,
+    "top_5_best_price_fill_share": 0.521,
+    "top_5_best_price_fill_share_ask": 0.498,
+    "top_5_fill_frequency_share": 0.417,
+    "spread_bps": 5.98,
+    "quote_updates_per_min": 34.0,
+    "top_mpsc_tob_rate": 0.073
+  },
+  "changes": {
+    "maker_participation": {
+      "normal": 2266,
+      "outage": 4174,
+      "change_pct": 84.2,
+      "verified_claim": "+84.2%"
+    },
+    "hhi_fills": {
+      "normal": 0.071,
+      "outage": 0.062,
+      "change_pct": -12.7,
+      "verified_claim": "-12.7%"
+    },
+    "quote_updates": {
+      "normal": 106.3,
+      "outage": 34.0,
+      "change_pct": -68.0,
+      "verified_claim": "-68.0%"
+    },
+    "spread": {
+      "normal_bps": 3.2,
+      "outage_bps": 5.98,
+      "change_bps": 2.78,
+      "change_pct": 86.9,
+      "verified_claim": "+86.9% (\u224887%)"
+    },
+    "top_5_best_price_share": {
+      "normal": 0.783,
+      "outage": 0.521,
+      "change_pct": -33.5,
+      "verified_claim": "-33.5%"
+    },
+    "top_mpsc_effectiveness": {
+      "normal_tob_rate": 0.464,
+      "outage_tob_rate": 0.073,
+      "collapse_pct": -84.3,
+      "verified_claim": "-84.3% (\u2248-84%)"
+    }
+  },
+  "paradox": {
+    "description": "The concentration-quality paradox",
+    "observation": {
+      "maker_participation": "+84.2%",
+      "hhi_concentration": "-12.7%",
+      "spread_quality": "+86.9%"
+    },
+    "expected_under_standard_theory": "More makers + lower HHI should improve quality",
+    "actual_outcome": "Quality worsened despite deconcentration",
+    "resolution": "Fill-based HHI measures who executes volume, not who sets prices. Top MPSC makers collapsed 84%, marginal entrants quoted inferior prices."
+  },
+  "tex_verification": {
+    "claims_verified": [
+      {
+        "claim": "Maker participation +84%",
+        "computed": "+84.2%",
+        "verified": true
+      },
+      {
+        "claim": "HHI -13%",
+        "computed": "-12.7%",
+        "verified": true
+      },
+      {
+        "claim": "Quote updates -68%",
+        "computed": "-68.0%",
+        "verified": true
+      },
+      {
+        "claim": "Spreads +87%",
+        "computed": "+86.9%",
+        "verified": true
+      },
+      {
+        "claim": "Top-5 best-price share 78%\u219252%",
+        "computed": "78.3%\u219252.1%",
+        "verified": true
+      },
+      {
+        "claim": "Top-MPSC collapse -84%",
+        "computed": "-84.3%",
+        "verified": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "cross_event_iv": {
+    "n_assets": 9,
+    "instrument": "January 2025 congestion spread sensitivity",
+    "separation_months": 6,
+    "first_stage": {
+      "coef": 0.2893960958263719,
+      "t_stat": 0.7998981968782419,
+      "f_stat": 0.6398371253690623,
+      "r2": 0.08375010027954666
+    },
+    "reduced_form": {
+      "coef": -0.5853395924353301,
+      "t_stat": -1.9100708764936192
+    },
+    "iv_estimate": -2.0226243576779783,
+    "direct_predictability": {
+      "coef": -0.39895912069310263,
+      "t_stat": -1.15112609847001,
+      "r2": 0.15916837998421396
+    }
+  }
+}

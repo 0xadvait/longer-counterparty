@@ -1,0 +1,20 @@
+{
+  "analysis": "Infrastructure is Market Design: Identity-Based Evidence",
+  "outage_event": {
+    "date": "2025-07-29",
+    "hour": 14
+  },
+  "who_trades_changes": {
+    "informed_pct_normal": 4.537622468661903,
+    "informed_pct_outage": 7.669661028844129,
+    "hft_pct_normal": 45.57605142367576,
+    "hft_pct_outage": 41.973822724401714,
+    "shadow_dmm_pct_normal": 11.696445237901509,
+    "shadow_dmm_pct_outage": 11.156572391044985,
+    "t_stat_informed": 1.9397270596651062
+  },
+  "concentration": {
+    "hhi_normal_mean": 0.030449206199125667,
+    "hhi_outage": 0.017765425495653638
+  }
+}

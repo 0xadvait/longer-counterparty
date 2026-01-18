@@ -1,0 +1,54 @@
+{
+  "horizons": {
+    "10s": {
+      "toxicity_differential_bps": 2.2160837119507235,
+      "t_stat_ols": 44.99322370171257,
+      "t_stat_cluster_taker": 2.131151380704428,
+      "t_stat_cluster_maker": 9.71892405207858,
+      "t_stat_twoway": 2.111544989318221,
+      "se_ols": 0.049253721552438415,
+      "se_twoway": 1.0495081673188769,
+      "n_trades": 685752,
+      "n_takers": 4045,
+      "n_makers": 6499
+    },
+    "1m": {
+      "toxicity_differential_bps": 2.971881716786042,
+      "t_stat_ols": 43.192298659794076,
+      "t_stat_cluster_taker": 1.6001165142621627,
+      "t_stat_cluster_maker": 3.5462372949164855,
+      "t_stat_twoway": 1.509885577516696,
+      "se_ols": 0.06880582439462625,
+      "se_twoway": 1.9682827368110147,
+      "n_trades": 685752,
+      "n_takers": 4045,
+      "n_makers": 6499
+    },
+    "5m": {
+      "toxicity_differential_bps": 7.584537231402075,
+      "t_stat_ols": 68.70838054109358,
+      "t_stat_cluster_taker": 2.464363754697774,
+      "t_stat_cluster_maker": 5.293424019890361,
+      "t_stat_twoway": 2.5916762336346704,
+      "se_ols": 0.11038736718391817,
+      "se_twoway": 2.9264987396844773,
+      "n_trades": 685752,
+      "n_takers": 4045,
+      "n_makers": 6499
+    }
+  },
+  "taker_level": {
+    "toxicity_differential_bps": 19.123409010831,
+    "t_stat": 24.27985636770711,
+    "p_value": 1.119567812096425e-121,
+    "n_q1_takers": 1897,
+    "n_q5_takers": 2148,
+    "n_total_takers": 4045
+  },
+  "methodology": {
+    "description": "Two-way clustered standard errors by taker and maker",
+    "reference": "Cameron, Gelbach, Miller (2011)",
+    "classification": "out-of-sample (train July 28, test July 29-30)",
+    "markout_definition": "price movement at horizon h"
+  }
+}

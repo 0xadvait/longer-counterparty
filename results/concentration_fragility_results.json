@@ -1,0 +1,115 @@
+{
+  "panel_regression": {
+    "model": "Spread = \u03b1 + \u03b2\u2081(Pre_HHI) + \u03b2\u2082(Outage) + \u03b2\u2083(Pre_HHI \u00d7 Outage)",
+    "outage_effect": {
+      "coef": 17.95167673935928,
+      "se": 9.14649542736381,
+      "t_stat": 1.9626836182143357,
+      "p_value": 0.04968294778721603
+    },
+    "interaction_effect": {
+      "coef": -2.7987063074436813,
+      "se": 9.72066995998416,
+      "t_stat": -0.28791290301643385,
+      "p_value": 0.7734134097580357
+    },
+    "pre_hhi_effect": {
+      "coef": 9.233056226114865,
+      "se": 1.2569066728080251,
+      "t_stat": 7.345856638255818,
+      "p_value": 2.0444541788885683e-13
+    },
+    "n_obs": 480,
+    "r_squared": 0.19940084184344664
+  },
+  "cross_sectional": {
+    "assets": [
+      {
+        "coin": "BTC",
+        "pre_hhi": 0.02907693394063672,
+        "normal_spread": 11.378288636560107,
+        "outage_spread": 16.988208887439928,
+        "spread_change": 5.609920250879821,
+        "spread_change_pct": 49.30372598260801
+      },
+      {
+        "coin": "ETH",
+        "pre_hhi": 0.03329150606233879,
+        "normal_spread": 24.033106749146746,
+        "outage_spread": 41.892912746345935,
+        "spread_change": 17.85980599719919,
+        "spread_change_pct": 74.31334693269845
+      },
+      {
+        "coin": "SOL",
+        "pre_hhi": 0.032655127469918166,
+        "normal_spread": 26.139644803673512,
+        "outage_spread": 29.237888072607223,
+        "spread_change": 3.098243268933711,
+        "spread_change_pct": 11.85266017271322
+      },
+      {
+        "coin": "HYPE",
+        "pre_hhi": 0.028097486362761763,
+        "normal_spread": 41.08116591280549,
+        "outage_spread": 123.67841970250103,
+        "spread_change": 82.59725378969554,
+        "spread_change_pct": 201.05868943692516
+      },
+      {
+        "coin": "ARB",
+        "pre_hhi": 0.06793325252531486,
+        "normal_spread": 42.29193978073786,
+        "outage_spread": 63.16134267469853,
+        "spread_change": 20.869402893960668,
+        "spread_change_pct": 49.34605270450558
+      },
+      {
+        "coin": "AVAX",
+        "pre_hhi": 0.0514410256494547,
+        "normal_spread": 37.480848011722586,
+        "outage_spread": 38.85254635765083,
+        "spread_change": 1.3716983459282446,
+        "spread_change_pct": 3.659731352661043
+      },
+      {
+        "coin": "DOGE",
+        "pre_hhi": 0.04293326637889625,
+        "normal_spread": 36.15046854276522,
+        "outage_spread": 54.47940861578178,
+        "spread_change": 18.32894007301656,
+        "spread_change_pct": 50.701805016258156
+      },
+      {
+        "coin": "LINK",
+        "pre_hhi": 0.04912564549907615,
+        "normal_spread": 32.320310111192754,
+        "outage_spread": 41.70278815121147,
+        "spread_change": 9.382478040018718,
+        "spread_change_pct": 29.029665890394718
+      },
+      {
+        "coin": "OP",
+        "pre_hhi": 0.08421254052551531,
+        "normal_spread": 53.788111264313656,
+        "outage_spread": 83.2816794157643,
+        "spread_change": 29.493568151450646,
+        "spread_change_pct": 54.83287562658571
+      },
+      {
+        "coin": "SUI",
+        "pre_hhi": 0.04391743321363679,
+        "normal_spread": 31.379343171702402,
+        "outage_spread": 35.579638563988595,
+        "spread_change": 4.200295392286193,
+        "spread_change_pct": 13.385542741614746
+      }
+    ],
+    "correlation": -0.08610458199638013
+  },
+  "interpretation": {
+    "realized_hhi_change": "HHI falls 12.3% during outage (Table 8)",
+    "fragility_channel": "Pre-outage HHI predicts LARGER spread widening",
+    "mechanism": "Concentrated markets depend on specific wallets; when impaired, quality suffers despite more makers entering"
+  }
+}

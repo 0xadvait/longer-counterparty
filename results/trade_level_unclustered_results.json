@@ -1,0 +1,46 @@
+{
+  "methodology": {
+    "description": "Trade-level t-statistics (unclustered, each trade treated as independent)",
+    "note": "These are supplementary results for the appendix. Main table uses clustered SEs.",
+    "classification": "out-of-sample (train July 28, test July 29-30)",
+    "classification_method": "mid-move (directional price prediction)"
+  },
+  "horizons": {
+    "10s": {
+      "maker_vs_informed_bps": 0.2,
+      "maker_vs_uninformed_bps": 2.4,
+      "toxicity_differential_bps": 2.2,
+      "t_stat_unclustered": 45.0,
+      "se_unclustered": 0.049,
+      "n_trades": 693000
+    },
+    "1m": {
+      "maker_vs_informed_bps": 0.4,
+      "maker_vs_uninformed_bps": 3.5,
+      "toxicity_differential_bps": 3.1,
+      "t_stat_unclustered": 43.2,
+      "se_unclustered": 0.072,
+      "n_trades": 693000
+    },
+    "5m": {
+      "maker_vs_informed_bps": -3.8,
+      "maker_vs_uninformed_bps": 3.8,
+      "toxicity_differential_bps": 7.6,
+      "t_stat_unclustered": 68.7,
+      "se_unclustered": 0.111,
+      "n_trades": 693000
+    }
+  },
+  "sample": {
+    "n_trades": 693000,
+    "n_takers_q1": 1971,
+    "n_takers_q5": 2082,
+    "total_takers": 4053
+  },
+  "notes": {
+    "warning": "Unclustered SEs are too small due to within-taker correlation",
+    "proper_inference": "See clustered_inference_main_results.json for proper t-statistics",
+    "paper_reference": "Table A1 (Appendix)",
+    "classification": "mid-move classification eliminates semantic ambiguity about informed"
+  }
+}

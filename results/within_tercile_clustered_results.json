@@ -1,0 +1,52 @@
+{
+  "within_tercile": {
+    "Small (<$1K)": {
+      "toxicity_differential_bps": 5.976815556517833,
+      "t_stat_ols": 35.83955622333326,
+      "t_stat_twoway": 1.1888680821342514,
+      "se_ols": 0.16676589183396864,
+      "se_twoway": 5.027316021293361,
+      "n_trades": 228695
+    },
+    "Medium ($1K-$10K)": {
+      "toxicity_differential_bps": 1.7625830869274852,
+      "t_stat_ols": 20.925464562292134,
+      "t_stat_twoway": 1.1135382419385074,
+      "se_ols": 0.08423149133346722,
+      "se_twoway": 1.5828671351772219,
+      "n_trades": 229136
+    },
+    "Large (>$10K)": {
+      "toxicity_differential_bps": 1.3599775550741464,
+      "t_stat_ols": 16.51185459651168,
+      "t_stat_twoway": 2.4481960248054184,
+      "se_ols": 0.08236370706422387,
+      "se_twoway": 0.5555019047881334,
+      "n_trades": 228255
+    }
+  },
+  "persistence": {
+    "q5_informed": {
+      "markout_1m_bps": -0.36152327518236205,
+      "markout_30m_bps": -7.665335013759121,
+      "persistence_ratio": 21.202881086681128,
+      "n_trades": 259088
+    },
+    "q1_uninformed": {
+      "markout_1m_bps": -3.3318796711251597,
+      "markout_30m_bps": -11.135230088790243,
+      "persistence_ratio": 3.342026479914843,
+      "n_trades": 426998
+    }
+  },
+  "methodology": {
+    "description": "Within-tercile analysis with two-way clustered SEs",
+    "size_bins": [
+      "Small (<$1K)",
+      "Medium ($1K-$10K)",
+      "Large (>$10K)"
+    ],
+    "clustering": "two-way by taker and maker",
+    "classification": "out-of-sample (train July 28, test July 29-30)"
+  }
+}

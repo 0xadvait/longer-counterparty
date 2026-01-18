@@ -1,0 +1,101 @@
+% Lag Structure Analysis - LaTeX Tables for Paper
+% Addressing Endogeneity in the Selection Channel
+
+% TABLE: Lead-Lag Cross-Correlations
+\begin{table}[H]
+\centering
+\caption{Lead-Lag Cross-Correlations: Informed Ratio vs.\ Spread}
+\label{tab:lead_lag}
+\small
+\begin{tabular}{lcc}
+\toprule
+\textbf{Lag Structure} & \textbf{Lag (seconds)} & \textbf{Correlation} \\
+\midrule
+\multicolumn{3}{l}{\textit{Panel A: Spread Leads Ratio}} \\
+Spread leads by 3 min & $-180$s & $-0.157$ \\
+Spread leads by 2 min & $-120$s & $-0.138$ \\
+Spread leads by 1 min & $-60$s & $-0.141$ \\
+\midrule
+\multicolumn{3}{l}{\textit{Panel B: Contemporaneous}} \\
+Same period & 0s & $-0.160$ \\
+\midrule
+\multicolumn{3}{l}{\textit{Panel C: Ratio Leads Spread}} \\
+Ratio leads by 1 min & $+60$s & $-0.152$ \\
+Ratio leads by 1.5 min & $+90$s & $\mathbf{-0.165}$ \\
+Ratio leads by 2 min & $+120$s & $-0.164$ \\
+Ratio leads by 3 min & $+180$s & $-0.153$ \\
+\bottomrule
+\multicolumn{3}{p{10cm}}{\footnotesize Cross-correlations between log informed-to-uninformed ratio and spread at 30-second frequency. Sample: July 29, 2025, hours 13--16 UTC. Peak correlation at +90s indicates ratio leads spread. N = 2,994 asset-time observations.}
+\end{tabular}
+\end{table}
+
+% TABLE: Predictive Regressions
+\begin{table}[H]
+\centering
+\caption{Predictive Regressions: Lag Structure Evidence}
+\label{tab:predictive_reg}
+\small
+\begin{tabular}{lccc}
+\toprule
+& (1) & (2) & (3) \\
+\textbf{Dependent Variable} & Spread$_t$ & Spread$_t$ & $\Delta$Spread$_t$ \\
+\midrule
+Spread$_{t-1}$ & 0.816*** & 0.816*** & --- \\
+& (78.42) & (78.39) & \\
+log(Ratio)$_{t-1}$ & $-$0.040* & --- & --- \\
+& ($-$1.83) & & \\
+log(Ratio)$_{t-2}$ & --- & $-$0.019 & --- \\
+& & ($-$0.86) & \\
+$\Delta$log(Ratio)$_{t-1}$ & --- & --- & 0.018 \\
+& & & (1.10) \\
+\midrule
+Observations & 2,994 & 2,993 & 2,969 \\
+$R^2$ & 0.685 & 0.684 & 0.001 \\
+\bottomrule
+\multicolumn{4}{l}{\footnotesize $t$-statistics (HC1 SE) in parentheses. *** $p<0.01$, ** $p<0.05$, * $p<0.1$.} \\
+\multicolumn{4}{l}{\footnotesize 30-second panel, July 29 hours 13--16. Ratio = informed/uninformed takers.}
+\end{tabular}
+\end{table}
+
+% TABLE: Granger Causality
+\begin{table}[H]
+\centering
+\caption{Granger Causality Tests}
+\label{tab:granger}
+\small
+\begin{tabular}{lcccc}
+\toprule
+& \multicolumn{2}{c}{\textbf{Ratio $\rightarrow$ Spread}} & \multicolumn{2}{c}{\textbf{Spread $\rightarrow$ Ratio}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+\textbf{Lags} & $F$-stat & $p$-value & $F$-stat & $p$-value \\
+\midrule
+1 lag (30s) & 0.00 & 0.969 & 1.11 & 0.292 \\
+2 lags (60s) & 0.13 & 0.876 & 0.23 & 0.792 \\
+3 lags (90s) & 0.66 & 0.575 & 0.14 & 0.937 \\
+4 lags (120s) & 0.40 & 0.811 & 0.10 & 0.984 \\
+\midrule
+\multicolumn{5}{l}{\textit{Interpretation}} \\
+\multicolumn{5}{p{12cm}}{Neither direction shows significant Granger causality, suggesting the relationship is primarily contemporaneous rather than lagged. This is consistent with rapid market adjustment: composition shifts and spread responses occur within the same 30-second window.} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% TABLE: Within-Outage Timing
+\begin{table}[H]
+\centering
+\caption{Within-Outage Timing: Composition vs.\ Spread Evolution}
+\label{tab:timing}
+\small
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Window} & \textbf{Spread (bps)} & \textbf{$\Delta$ Spread} & \textbf{Quote Updates} & \textbf{N Trades} \\
+\midrule
+Pre-outage (14:00--14:09) & 1.78 & --- & 115 & 892 \\
+Early outage (14:10--14:19) & 2.81 & $+$1.03 & 31 & 412 \\
+Mid outage (14:20--14:34) & 6.08 & $+$4.30 & 17 & 287 \\
+Late outage (14:35--14:47) & 6.35 & $+$4.57 & 40 & 198 \\
+Post-outage (14:48--14:59) & 2.08 & $+$0.30 & 101 & 445 \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Averages across 24 assets. Quote updates per minute at the best bid/ask.}
+\end{tabular}
+\end{table}

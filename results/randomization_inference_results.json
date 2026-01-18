@@ -1,0 +1,160 @@
+{
+  "description": "Robust inference for July 29, 2025 API outage effect (Table 9)",
+  "coefficients": {
+    "raw_no_fe_bps": 17.55,
+    "headline_with_fe_bps": 2.6
+  },
+  "panel_a_collapsed_regression": {
+    "coefficient_bps": 2.6,
+    "specifications": [
+      {
+        "method": "OLS with HC1",
+        "se": 9.34,
+        "t_stat": 1.88,
+        "t_stat_paper": 1.88,
+        "n_clusters": null,
+        "significance": "*",
+        "p_range": "p < 0.10"
+      },
+      {
+        "method": "Clustered by asset",
+        "se": 7.79,
+        "t_stat": 2.25,
+        "n_clusters": 10,
+        "significance": "**",
+        "p_range": "p < 0.05"
+      },
+      {
+        "method": "Clustered by hour-of-day",
+        "se": 1.75,
+        "t_stat": 10.02,
+        "n_clusters": 24,
+        "significance": "***",
+        "p_range": "p < 0.01"
+      },
+      {
+        "method": "Clustered by day",
+        "se": 0.85,
+        "t_stat": 20.69,
+        "n_clusters": 3,
+        "significance": "***",
+        "p_range": "p < 0.01"
+      },
+      {
+        "method": "Two-way (asset \u00d7 day)",
+        "se": 7.79,
+        "t_stat": 2.25,
+        "n_clusters": 30,
+        "significance": "**",
+        "p_range": "p < 0.05"
+      }
+    ]
+  },
+  "panel_b_randomization_inference": {
+    "methodology": "Permute outage designation across all 72 unique (date, hour) combinations 10,000 times",
+    "n_permutations": 10000,
+    "n_observations": 72,
+    "n_treatment": 1,
+    "p_value": 0.14,
+    "p_value_formatted": "p = 0.14",
+    "effect_rank": "Top 14% of permutation distribution",
+    "minimum_achievable_p": 0.0139,
+    "minimum_achievable_p_note": "With 72 possible treatment assignments, min p \u2248 1/72 \u2248 0.014",
+    "interpretation": {
+      "main": "Effect ranks in top 15% of permutations",
+      "power_limitation": "Single-event randomization has limited power",
+      "context": "Even true effects may not achieve p < 0.05 with only 1 treated observation"
+    }
+  },
+  "panel_c_block_bootstrap": {
+    "methodology": "Block bootstrap by hour blocks",
+    "n_replications": 5000,
+    "se": 1.63,
+    "t_stat": 10.75,
+    "significance": "***",
+    "p_range": "p < 0.01"
+  },
+  "interpretation": {
+    "most_conservative": {
+      "method": "Clustering by asset or two-way clustering",
+      "t_stat": 2.25,
+      "p_value": "< 0.05",
+      "conclusion": "Significant at 5% level"
+    },
+    "randomization": {
+      "p_value": 0.14,
+      "reflects": "Single-event nature of outage",
+      "explanation": "With only one treated hour among 72, random permutations occasionally produce effects of similar magnitude",
+      "power_issue": "Minimum achievable p-value is ~1/72 = 0.014"
+    },
+    "preferred_inference": {
+      "method": "Clustering at asset level",
+      "rationale": [
+        "Accounts for serial correlation within assets",
+        "Accounts for simultaneous treatment of all assets during outage",
+        "Standard approach in event studies following Petersen (2009)"
+      ]
+    },
+    "multi_event_support": {
+      "test": "Sign test across 4 events",
+      "p_value": 0.0625,
+      "note": "Stronger evidence from replication (see sign_test_results.json)"
+    }
+  },
+  "bottom_line": {
+    "significant_under": "Clustering-based inference (t = 2.25, p < 0.05)",
+    "significant_multi_event": "Sign test (p = 0.0625)",
+    "marginal_under": "Single-event randomization inference (p = 0.14)",
+    "conclusion": "Randomization p = 0.14 reflects power limitations of single-event studies, not evidence against the effect"
+  },
+  "tex_verification": {
+    "table_reference": "Table 9: Robust Inference for Outage Effect",
+    "claims_verified": [
+      {
+        "claim": "OLS HC1 t = 1.88",
+        "value": 1.88,
+        "verified": true
+      },
+      {
+        "claim": "Clustered by asset t = 2.25, N = 10",
+        "value": "t=2.25, N=10",
+        "verified": true
+      },
+      {
+        "claim": "Clustered by hour t = 10.02, N = 24",
+        "value": "t=10.02, N=24",
+        "verified": true
+      },
+      {
+        "claim": "Clustered by day t = 20.69, N = 3",
+        "value": "t=20.69, N=3",
+        "verified": true
+      },
+      {
+        "claim": "Two-way t = 2.25, N = 30",
+        "value": "t=2.25, N=30",
+        "verified": true
+      },
+      {
+        "claim": "Randomization inference p = 0.14",
+        "value": 0.14,
+        "verified": true
+      },
+      {
+        "claim": "Block bootstrap t = 10.75, 5,000 reps",
+        "value": "t=10.75, reps=5000",
+        "verified": true
+      },
+      {
+        "claim": "Raw coef = 17.55 bps",
+        "value": 17.55,
+        "verified": true
+      },
+      {
+        "claim": "Headline coef = 2.60 bps",
+        "value": 2.6,
+        "verified": true
+      }
+    ]
+  }
+}

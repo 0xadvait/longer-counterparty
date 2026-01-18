@@ -1,0 +1,21 @@
+{
+  "n_assets": 7,
+  "covariate_tests": {
+    "n_tests": 14,
+    "n_significant_10pct": 9,
+    "conclusion": "CONCERN"
+  },
+  "mccrary_tests": {
+    "n_tests": 7,
+    "n_significant_10pct": 2,
+    "conclusion": "CONCERN"
+  },
+  "bandwidth_sensitivity": {
+    "stable_across_bandwidths": true
+  },
+  "placebo_tests": {
+    "n_tests": 38,
+    "n_significant_10pct": 27,
+    "conclusion": "CONCERN"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "wallet_learning": {
+    "n_wallets_classified": 28539,
+    "n_stress_resilient": 14272,
+    "resilient_stay_rate": 0.38878676470588236,
+    "non_resilient_stay_rate": 0.0755813953488372,
+    "difference_pp": 31.320536935704514,
+    "chi2_stat": 2576.440900499436,
+    "chi2_pvalue": 0.0
+  },
+  "asset_iv": {
+    "n_assets": 10,
+    "first_stage_coef": 0.6791297969152713,
+    "first_stage_t": 2.6169230368089775,
+    "first_stage_f": 6.848286180581516,
+    "reduced_form_coef": -0.3983606071299932,
+    "reduced_form_t": -1.228410885868172,
+    "iv_estimate": -0.58657506847648
+  }
+}

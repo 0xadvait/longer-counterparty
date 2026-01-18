@@ -1,0 +1,15 @@
+{
+  "horizon_s": 30,
+  "n_samples": 9,
+  "mean_b_insample": 1.3749123302333168,
+  "mean_t_insample": 11.206752459838235,
+  "mean_r2_insample": 0.03485878344631648,
+  "mean_r2_oos": 0.020858146655563563,
+  "mean_oos_corr": 0.2019066180513376,
+  "mean_spread_bps": 0.29868791398247746,
+  "mean_gross_ret_bps": 0.5577255939202718,
+  "mean_net_ret_bps": 0.2590376799377942,
+  "mean_hit_rate": 0.5232455189703057,
+  "mean_profit_factor": 1.7674122287715726,
+  "pct_profitable_net": 0.8888888888888888
+}

@@ -1,0 +1,47 @@
+{
+  "specification": "Same-hour DiD: Compare 14:00 UTC on July 28 (control) vs July 29 (outage)",
+  "methodology": {
+    "treatment_group": "Q5 (informed) wallets",
+    "control_group": "Q1 (uninformed) wallets",
+    "pre_period": "14:00 UTC on July 28, 2025 (control day)",
+    "post_period": "14:00 UTC on July 29, 2025 (outage day)",
+    "classification": "Out-of-sample (train morning July 28, test afternoon July 28-29)",
+    "standard_errors": "Wallet-clustered"
+  },
+  "main_result": {
+    "did_coefficient_pp": 2.8044280442802263,
+    "did_se_pp": 2.111869762568457,
+    "did_t_stat": 1.327936075409063,
+    "did_p_value": 0.1841992257058057,
+    "significant_5pct": false,
+    "significant_10pct": false
+  },
+  "robustness_pooled": {
+    "hours_compared": "12:00-16:00 UTC",
+    "did_coefficient_pp": -1.1512915129152577,
+    "did_t_stat": -1.0992459140454087,
+    "did_p_value": 0.2716608167018042
+  },
+  "intensive_margin": {
+    "did_coefficient_fills": -2.711869932633359,
+    "did_t_stat": -0.1834241687014964,
+    "did_p_value": 0.8544652136738579
+  },
+  "group_means": {
+    "informed_control": 0.422140221402214,
+    "informed_outage": 0.36088560885608856,
+    "uninformed_control": 0.40369003690036903,
+    "uninformed_outage": 0.31439114391143913,
+    "informed_change_pp": -6.125461254612547,
+    "uninformed_change_pp": -8.92988929889299,
+    "did_manual_pp": 2.804428044280444
+  },
+  "sample": {
+    "n_observations": 5420,
+    "n_wallets": 2710,
+    "n_informed": 1355,
+    "n_uninformed": 1355,
+    "n_fills_control_hour": 54492,
+    "n_fills_outage_hour": 65495
+  }
+}

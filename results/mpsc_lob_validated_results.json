@@ -1,0 +1,72 @@
+{
+  "methodology": {
+    "description": "Validated MPSC using TOB fill matching",
+    "tob_definition": "Fill at best bid/ask within 10-second window",
+    "mpsc_formula": "TOB_fill_share \u00d7 repricing_intensity (normalized)",
+    "l2_validation": false
+  },
+  "data": {
+    "total_maker_fills": 5018086,
+    "tob_fill_rate": 0.28429704074422,
+    "n_assets": 10,
+    "pre_outage_makers": 2851,
+    "outage_makers": 2785
+  },
+  "mpsc_distribution": {
+    "mean": 7.170000717000071e-05,
+    "median": 2.8670432886454914e-09,
+    "std": 0.0019254531847185121,
+    "p90": 9.24901891718442e-07,
+    "p95": 5.5050315288647815e-06,
+    "p99": 0.00023826319126602093,
+    "max": 0.16127664317666546
+  },
+  "concentration": {
+    "top5_mpsc": 0.28270263262650397,
+    "top10_mpsc": 0.5686805447068901,
+    "top20_mpsc": 0.7834787431778383,
+    "top5_fills": 0.1656064760543484,
+    "top10_fills": 0.2553762035604168,
+    "top20_fills": 0.39236791657685544,
+    "top5_volume": 0.3631735131688446,
+    "top10_volume": 0.4844285697463015,
+    "top20_volume": 0.6232377861327427
+  },
+  "fragility_test": {
+    "Fill HHI": {
+      "coef": -0.4898629613763069,
+      "t_stat": -1.5892894737906202,
+      "r2": 0.23996572092836532,
+      "p_value": 0.1506583338143804
+    },
+    "MPSC HHI": {
+      "coef": -0.0066219609229248,
+      "t_stat": -0.018730144559763285,
+      "r2": 4.385036646481488e-05,
+      "p_value": 0.9855150956606064
+    },
+    "Top-5 Fill Share": {
+      "coef": -0.7003047503727089,
+      "t_stat": -2.7747812561556198,
+      "r2": 0.49042674339458214,
+      "p_value": 0.024118024018112458
+    },
+    "Top-5 MPSC Share": {
+      "coef": -0.437180493549768,
+      "t_stat": -1.3748823666498622,
+      "r2": 0.1911267839404185,
+      "p_value": 0.20644165773351067
+    },
+    "Top-5 TOB Share": {
+      "coef": -0.7452705887924308,
+      "t_stat": -3.161462576470133,
+      "r2": 0.5554282505190165,
+      "p_value": 0.013365471735073943
+    }
+  },
+  "validation": {
+    "mpsc_fill_correlation": 0.7652394773008887,
+    "temporal_stability": 0.4817158521068598,
+    "high_vol_low_mpsc_count": 1046
+  }
+}

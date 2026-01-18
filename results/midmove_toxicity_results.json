@@ -1,0 +1,50 @@
+{
+  "specification": "Mid-move based classification (NEW BASELINE)",
+  "methodology": {
+    "classification_criterion": "mid-move (Direction \u00d7 \u0394Mid), NOT markout",
+    "unit_of_analysis": "taker",
+    "classification": "out-of-sample (train July 28, test July 29-30)",
+    "horizon": "1 minute",
+    "min_trades": 5,
+    "assets": [
+      "BTC",
+      "ETH",
+      "SOL",
+      "HYPE"
+    ]
+  },
+  "classification_summary": {
+    "n_q1_train": 2698,
+    "n_q5_train": 2698,
+    "q1_mean_midmove_train": -10.831644508676622,
+    "q5_mean_midmove_train": 19.57078152216405,
+    "q5_mean_markout_train": 19.341246698727815
+  },
+  "oos_validation": {
+    "q1_mean_midmove_oos": 0.028890347407975987,
+    "q5_mean_midmove_oos": 19.637253700880454,
+    "q5_predicts_direction": true
+  },
+  "toxicity_differential": {
+    "taker_level": {
+      "coefficient_bps": 19.183898219393132,
+      "t_stat": 24.379822617349692,
+      "t_stat_welch": 25.23877130789364,
+      "p_value": 1.2896728603047094e-122
+    },
+    "trade_weighted": {
+      "coefficient_bps": 3.0525968644031627,
+      "t_stat": 5.842780349842024,
+      "p_value": 5.537184085573638e-09
+    }
+  },
+  "sample": {
+    "n_q1_takers": 1903,
+    "n_q5_takers": 2150,
+    "n_trades_test": 693367
+  },
+  "group_means": {
+    "maker_profit_vs_q1_bps": 0.5096134932833429,
+    "maker_profit_vs_q5_bps": -18.67428472610979
+  }
+}

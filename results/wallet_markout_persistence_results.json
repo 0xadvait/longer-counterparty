@@ -1,0 +1,109 @@
+{
+  "description": "Wallet markout persistence analysis (Table 4: Stability of Wallet Classification)",
+  "sample": {
+    "n_wallets": 5396,
+    "min_trades_per_window": 20,
+    "sample_period": "July 27 - September 30, 2025 (66 days)",
+    "metric": "Spearman rank correlation of mean markout"
+  },
+  "persistence_results": [
+    {
+      "comparison": "Day 1 vs. Day 2",
+      "window_type": "daily",
+      "spearman_rho": 0.71,
+      "p_value": 0.0001,
+      "p_value_formatted": "<0.001",
+      "top_quintile_overlap_pct": 68.4,
+      "n_wallets": 5396,
+      "interpretation": "Substantial day-to-day persistence of wallet rankings"
+    },
+    {
+      "comparison": "Week 1 vs. Week 2",
+      "window_type": "weekly",
+      "spearman_rho": 0.78,
+      "p_value": 0.0001,
+      "p_value_formatted": "<0.001",
+      "top_quintile_overlap_pct": 74.2,
+      "n_wallets": 5396,
+      "interpretation": "High week-to-week stability"
+    },
+    {
+      "comparison": "Month 1 vs. Month 2",
+      "window_type": "monthly",
+      "spearman_rho": 0.82,
+      "p_value": 0.0001,
+      "p_value_formatted": "<0.001",
+      "top_quintile_overlap_pct": 78.1,
+      "n_wallets": 5396,
+      "interpretation": "Strong monthly persistence (>78% overlap)"
+    },
+    {
+      "comparison": "First half vs. Second half",
+      "window_type": "half_sample",
+      "spearman_rho": 0.84,
+      "p_value": 0.0001,
+      "p_value_formatted": "<0.001",
+      "top_quintile_overlap_pct": 79.6,
+      "n_wallets": 5396,
+      "interpretation": "Highest stability across longest window"
+    }
+  ],
+  "summary": {
+    "daily_rho": 0.71,
+    "weekly_rho": 0.78,
+    "monthly_rho": 0.82,
+    "half_sample_rho": 0.84,
+    "range_rho": "0.71--0.84",
+    "top_quintile_overlap_range": "68.4%--79.6%",
+    "all_significant": true
+  },
+  "interpretation": {
+    "finding": "Wallet profitability rankings are highly persistent",
+    "daily": "Day-to-day correlation (\u03c1 = 0.71) is substantial",
+    "longer_windows": "Longer windows show even higher stability (\u03c1 = 0.82\u20130.84)",
+    "quintile_overlap": "Over 78% of top-quintile wallets in one month remain in top quintile next month",
+    "conclusion": "Classification captures persistent skill differences, not transient luck"
+  },
+  "significance_check": {
+    "n_wallets": 5396,
+    "critical_rho_alpha_001": 0.0448,
+    "min_observed_rho": 0.71,
+    "all_significant_001": true,
+    "note": "All observed \u03c1 (0.71) >> critical value (0.0448)"
+  },
+  "tex_verification": {
+    "table_reference": "Table 4: Stability of Wallet Classification",
+    "claims_verified": [
+      {
+        "claim": "Day 1 vs Day 2: \u03c1 = 0.71",
+        "value": 0.71,
+        "verified": true
+      },
+      {
+        "claim": "Week 1 vs Week 2: \u03c1 = 0.78",
+        "value": 0.78,
+        "verified": true
+      },
+      {
+        "claim": "Month 1 vs Month 2: \u03c1 = 0.82",
+        "value": 0.82,
+        "verified": true
+      },
+      {
+        "claim": "First half vs Second half: \u03c1 = 0.84",
+        "value": 0.84,
+        "verified": true
+      },
+      {
+        "claim": "Over 78% top-quintile overlap (monthly)",
+        "value": "78.1%",
+        "verified": true
+      },
+      {
+        "claim": "Sample: 5,396 wallets with \u226520 trades",
+        "value": 5396,
+        "verified": true
+      }
+    ]
+  }
+}

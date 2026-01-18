@@ -1,0 +1,20 @@
+{
+  "out_of_sample": {
+    "spread_bps": 1.0851004563285631,
+    "t_stat": 46.30287704445477,
+    "valid": true
+  },
+  "risk_adjusted": {
+    "sharpe_t_stat": 101.72295043121507,
+    "sharpe_p_value": 0.0,
+    "classification_agreement": 0.6736773117254529
+  },
+  "execution": {
+    "q5_impact_bps": NaN,
+    "q1_impact_bps": NaN,
+    "impact_t_stat": NaN
+  },
+  "persistence": {
+    "q5_stay_top40_pct": 0.46248294679399726
+  }
+}

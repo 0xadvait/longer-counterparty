@@ -1,0 +1,62 @@
+{
+  "selection_decomposition": [
+    {
+      "event": "July 29 API Outage",
+      "pre_informed_pct": 88.5724266896821,
+      "during_informed_pct": 49.883743460569654,
+      "selection_effect_pp": -38.68868322911245,
+      "quality_change_pct": -14.008700766607184,
+      "n_pre_trades": 194652,
+      "n_during_trades": 103220
+    },
+    {
+      "event": "July 30 Detected",
+      "pre_informed_pct": 87.80695407924416,
+      "during_informed_pct": 57.17921628889743,
+      "selection_effect_pp": -30.627737790346735,
+      "quality_change_pct": -11.37592033025493,
+      "n_pre_trades": 93988,
+      "n_during_trades": 41648
+    },
+    {
+      "event": "Congestion 1",
+      "pre_informed_pct": null,
+      "during_informed_pct": null,
+      "selection_effect_pp": null,
+      "spread_effect_bps": 0.698566469652907,
+      "t_stat": 8.403917489777921,
+      "quality_change_pct": 15.728113222894022
+    },
+    {
+      "event": "Congestion 2",
+      "pre_informed_pct": null,
+      "during_informed_pct": null,
+      "selection_effect_pp": null,
+      "spread_effect_bps": 1.0995664702672316,
+      "t_stat": 10.872425371620908,
+      "quality_change_pct": 26.71391215371206
+    }
+  ],
+  "mpsc_direct": {
+    "n_makers": 10846,
+    "mean_mpsc": 0.008492771108026825,
+    "median_mpsc": 0.001392573406025672,
+    "p90_mpsc": 0.0141424813726462,
+    "p95_mpsc": 0.035092849831846934,
+    "p99_mpsc": 0.14329580348004167,
+    "top10_mpsc_share": 0.07387336321123103,
+    "top20_mpsc_share": 0.12154708170687367,
+    "high_mpsc_retention": 0.2894009216589862
+  },
+  "fragility_test": {
+    "mpsc_t": -2.3286825470293886,
+    "mpsc_r2": 0.40399749628915604,
+    "fills_t": -2.0100548617200653,
+    "fills_r2": 0.3355658623299195
+  },
+  "randomization_context": {
+    "sign_test_positive": 0,
+    "sign_test_total": 2,
+    "sign_test_p": 1.0
+  }
+}

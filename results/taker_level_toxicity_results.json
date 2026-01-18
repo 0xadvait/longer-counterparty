@@ -1,0 +1,40 @@
+{
+  "specification": "Taker-level analysis: aggregate maker profits per taker, then compare Q1 vs Q5",
+  "methodology": {
+    "unit_of_analysis": "taker",
+    "classification": "out-of-sample (train July 28, test July 29-30)",
+    "markout_horizon": "1 minute",
+    "min_trades_for_classification": 5,
+    "assets": [
+      "BTC",
+      "ETH",
+      "SOL",
+      "HYPE"
+    ]
+  },
+  "toxicity_differential": {
+    "coefficient_bps": 17.43671047913881,
+    "se": 0.7808393273060298,
+    "t_stat": 22.33072780708609,
+    "t_stat_welch": 22.715479754337647,
+    "p_value": 1.0581839099566048e-103,
+    "p_value_welch": 1.8136171156773183e-105
+  },
+  "group_means": {
+    "maker_profit_vs_q1_bps": 0.5229417220765737,
+    "maker_profit_vs_q5_bps": -16.913768757062236,
+    "q1_std": 15.8872970042965,
+    "q5_std": 29.177359010624073
+  },
+  "sample": {
+    "n_q1_takers": 1785,
+    "n_q5_takers": 1901,
+    "n_trades_q1": 426886,
+    "n_trades_q5": 258841
+  },
+  "robustness_weighted": {
+    "coefficient_bps": 2.940502311350228,
+    "t_stat": 5.323522540430167,
+    "p_value": 1.0785481468846165e-07
+  }
+}

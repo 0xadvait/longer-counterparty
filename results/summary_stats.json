@@ -1,0 +1,11 @@
+{
+  "cross_sectional_corr": -0.517367260602166,
+  "cross_sectional_pval": 0.04012821713180188,
+  "panel_corr": -0.3300646998752535,
+  "panel_pval": 2.8165259676420793e-25,
+  "n_assets": 16,
+  "n_observations": 938,
+  "n_negative_ts": 16,
+  "n_total_ts": 16,
+  "verdict": "STRONG SUPPORT"
+}

@@ -1,0 +1,14 @@
+{
+  "n_events": 3,
+  "n_significant": 2,
+  "mean_spread_effect_bps": 1.9449357841380752,
+  "median_spread_effect_bps": 2.2517296867691257,
+  "mean_quote_drop_pct": -25.997607422366013,
+  "wilcoxon_p_value": null,
+  "known_outage_detected": false,
+  "detection_params": {
+    "shock_percentile": 10,
+    "min_duration_min": 10,
+    "min_assets_affected": 3
+  }
+}

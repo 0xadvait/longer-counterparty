@@ -1,0 +1,96 @@
+{
+  "decomposition_replication": {
+    "col1_staleness": {
+      "coef": 1.227551951404406,
+      "t": 4.422709269991098,
+      "r2": 0.32816671339010217
+    },
+    "col2_selection": {
+      "coef": 0.08683877910812952,
+      "t": 0.556117937270144,
+      "r2": 0.17369848381389552
+    },
+    "col3_combined": {
+      "staleness_coef": 1.2300741139757796,
+      "staleness_t": 4.514593038523273,
+      "informed_coef": 0.10988757071443998,
+      "informed_t": 1.317840337615186,
+      "r2": 0.3296916357833777
+    },
+    "col4_full": {
+      "staleness_coef": 1.0976132373504406,
+      "staleness_t": 7.761022696004082,
+      "informed_coef": 0.07604903774781561,
+      "informed_t": 0.9283529825804914,
+      "r2": 0.367816103177386
+    }
+  },
+  "iv_analysis": {
+    "sample": "within-event, non-anchor assets",
+    "n_obs": 252,
+    "ols": {
+      "informed_coef": 0.1084204063027314,
+      "informed_t": 1.2771166476276274,
+      "staleness_coef": 1.277160113720311,
+      "staleness_t": 4.355542520104124
+    },
+    "first_stage": {
+      "anchor_coef": 0.06184484336988439,
+      "anchor_t": 2.1603082209882176,
+      "f_stat": 4.666931609669278
+    },
+    "second_stage": {
+      "predicted_informed_coef": 0.9862056610588348,
+      "predicted_informed_t": 0.48014202593297833,
+      "staleness_coef": 1.2922504288961607,
+      "staleness_t": 4.501945303008419
+    },
+    "reduced_form": {
+      "anchor_coef": 0.060991734638676964,
+      "anchor_t": 0.4801420259329755
+    },
+    "iv_estimate": 0.9862056610588353
+  },
+  "replication": [
+    {
+      "split": "Event Phase",
+      "subsample": "Adjacent Hours",
+      "informed_coef": 0.08857666697216679,
+      "informed_t": 2.4485570965703696,
+      "staleness_coef": -0.4227034691346936,
+      "staleness_t": -5.300300414471402,
+      "n_obs": 168,
+      "r2": 0.8318987930491768
+    },
+    {
+      "split": "Event Phase",
+      "subsample": "During Outage",
+      "informed_coef": -0.5435513290898372,
+      "informed_t": -1.086270574427218,
+      "staleness_coef": 1.101176227396936,
+      "staleness_t": 3.289741199366445,
+      "n_obs": 84,
+      "r2": 0.2834416765738037
+    },
+    {
+      "split": "Liquidity",
+      "subsample": "Low Liquidity",
+      "informed_coef": 0.022083027881405305,
+      "informed_t": 0.2925929806140882,
+      "staleness_coef": 0.6504274569861862,
+      "staleness_t": 3.2778321240381234,
+      "n_obs": 126,
+      "r2": 0.38939276304723125
+    },
+    {
+      "split": "Liquidity",
+      "subsample": "High Liquidity",
+      "informed_coef": -0.08776265884761855,
+      "informed_t": -0.36138353787016997,
+      "staleness_coef": 1.7141397846232322,
+      "staleness_t": 4.405143420461383,
+      "n_obs": 126,
+      "r2": 0.3479445651657693
+    }
+  ]
+}

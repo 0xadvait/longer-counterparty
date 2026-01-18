@@ -1,0 +1,53 @@
+{
+  "description": "Sign test for multi-event spread widening",
+  "methodology": {
+    "null_hypothesis": "Infrastructure stress has no effect on spreads (p=0.5 positive)",
+    "alternative": "Infrastructure stress widens spreads (positive effect)",
+    "test": "Binomial sign test"
+  },
+  "events": [
+    {
+      "name": "Jan 20 Congestion 1",
+      "spread_effect_bps": 0.7,
+      "direction": "positive"
+    },
+    {
+      "name": "Jan 20 Congestion 2",
+      "spread_effect_bps": 1.1,
+      "direction": "positive"
+    },
+    {
+      "name": "Jul 29 API Outage",
+      "spread_effect_bps": 2.6,
+      "direction": "positive"
+    },
+    {
+      "name": "Jul 30 Stress Event",
+      "spread_effect_bps": 2.25,
+      "direction": "positive"
+    }
+  ],
+  "summary": {
+    "n_events": 4,
+    "n_positive": 4,
+    "n_negative": 0,
+    "fraction_positive": 1.0,
+    "mean_effect_bps": 1.66,
+    "median_effect_bps": 1.68,
+    "min_effect_bps": 0.7,
+    "max_effect_bps": 2.6,
+    "range_bps": "0.70--2.60"
+  },
+  "sign_test": {
+    "p_value_onesided": 0.0625,
+    "p_value_onesided_formatted": "0.0625",
+    "p_value_scipy": 0.0625,
+    "interpretation": "Reject null at 10% level (p=0.0625 < 0.10), marginal at 5%",
+    "calculation": "P(X=4|n=4, p=0.5) = 0.5^4 = 0.0625"
+  },
+  "tex_verification": {
+    "claim": "4/4 events positive, sign test p = 0.0625",
+    "verified": true,
+    "notes": "Exact binomial probability for 4/4 successes under null p=0.5"
+  }
+}

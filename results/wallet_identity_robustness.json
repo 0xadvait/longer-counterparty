@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "informed_shift_pp": 4.830453156620187,
+    "normal_informed_pct": 7.948347281555286,
+    "outage_informed_pct": 12.778800438175473
+  },
+  "adversarial_merge": {
+    "n_wallets_merged": 67,
+    "informed_shift_pp": 5.361359496110854,
+    "pct_baseline_preserved": 110.99081850660437
+  },
+  "adversarial_split": {
+    "n_wallets_split": 10,
+    "k_splits": 5,
+    "informed_shift_pp": 5.030761062017154,
+    "pct_baseline_preserved": 104.1467725470527
+  },
+  "router_exclusion": {
+    "n_routers_excluded": 7528,
+    "informed_shift_pp": 2.4124545549083365,
+    "pct_baseline_preserved": 49.94261359520777
+  },
+  "timing_linkage": {
+    "n_suspicious_pairs": 4994,
+    "top_pair_coincidences": 13870
+  },
+  "overall_verdict": "ROBUST"
+}

@@ -1,0 +1,86 @@
+{
+  "description": "Economic magnitude of July 29, 2025 API outage",
+  "outage_characteristics": {
+    "date": "2025-07-29",
+    "start_time_utc": "2025-07-29 14:10:00 UTC",
+    "end_time_utc": "2025-07-29 14:47:00 UTC",
+    "duration_minutes": 37,
+    "cause": "API infrastructure failure"
+  },
+  "spread_impact": {
+    "spread_normal_bps": 3.2,
+    "spread_outage_bps": 5.98,
+    "spread_widening_bps": 2.78,
+    "spread_widening_pct": 86.9
+  },
+  "volume": {
+    "two_sided_volume_usd": 847000000,
+    "two_sided_volume_formatted": "$847M",
+    "calculation_note": "Aggregated from trade-level data during outage window"
+  },
+  "costs": {
+    "excess_spread_cost_usd": 235466.0,
+    "excess_spread_cost_formatted": "$0.24M",
+    "excess_spread_calculation": "$847M \u00d7 2.78 bps = $0.24M",
+    "forced_liquidation_losses_usd": 1500000,
+    "forced_liquidation_losses_formatted": "$1.5M",
+    "total_excess_cost_usd": 1735466.0,
+    "total_excess_cost_formatted": "$1.7M"
+  },
+  "distributional_incidence": {
+    "uninformed_cost_increase_pct": 12.0,
+    "informed_cost_decrease_pct": 28.0,
+    "welfare_transfer_usd": 900000,
+    "welfare_transfer_formatted": "$0.9M",
+    "direction": "Transfer from uninformed to informed traders",
+    "mechanism": "Informed traders exploited dislocations; uninformed paid wider spreads"
+  },
+  "composition_during_outage": {
+    "informed_share_normal_pct": 7.95,
+    "informed_share_outage_pct": 12.78,
+    "uninformed_share_normal_pct": 6.68,
+    "uninformed_share_outage_pct": 10.209999999999999,
+    "informed_uninformed_ratio_normal": 1.19,
+    "informed_uninformed_ratio_outage": 1.25,
+    "ratio_change_pct": 5.2
+  },
+  "tex_verification": {
+    "claims_verified": [
+      {
+        "claim": "$847M two-sided volume",
+        "value": "$847M",
+        "verified": true
+      },
+      {
+        "claim": "$0.24M excess spread cost",
+        "value": "$0.24M",
+        "verified": true
+      },
+      {
+        "claim": "$1.5M forced liquidation losses",
+        "value": "$1.5M",
+        "verified": true
+      },
+      {
+        "claim": "$1.7M total excess cost",
+        "value": "$1.7M",
+        "verified": true
+      },
+      {
+        "claim": "$0.9M welfare transfer",
+        "value": "$0.9M",
+        "verified": true
+      },
+      {
+        "claim": "12% cost increase for uninformed",
+        "value": "12.0%",
+        "verified": true
+      },
+      {
+        "claim": "28% cost decrease for informed",
+        "value": "28.0%",
+        "verified": true
+      }
+    ]
+  }
+}

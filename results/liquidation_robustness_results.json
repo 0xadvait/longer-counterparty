@@ -1,0 +1,77 @@
+{
+  "vol_classification_test": {
+    "q1_mean_vol": 1.7143016662787827,
+    "q5_mean_vol": 3.1783063797559907,
+    "t_stat": -45.11706130087223,
+    "p_value": 0.0,
+    "interpretation": "Q5 trades during higher vol"
+  },
+  "robustness_by_volatility": [
+    {
+      "label": "Baseline",
+      "n_trades": 686086,
+      "n_q1": 1897,
+      "n_q5": 2148,
+      "taker_diff": 19.122983030805965,
+      "taker_t": 24.279371815275404,
+      "trade_w_diff": 2.970356395942784,
+      "trade_w_t": 5.625094011397496
+    },
+    {
+      "label": "Low vol (0-50 pct)",
+      "n_trades": 141166,
+      "n_q1": 1176,
+      "n_q5": 615,
+      "taker_diff": 0.14410489019197043,
+      "taker_t": 0.5052405096027455,
+      "trade_w_diff": 0.504100714757644,
+      "trade_w_t": 2.3330393062510892
+    },
+    {
+      "label": "Med vol (50-75 pct)",
+      "n_trades": 176405,
+      "n_q1": 1269,
+      "n_q5": 818,
+      "taker_diff": 0.24256576938650498,
+      "taker_t": 0.6590638502761184,
+      "trade_w_diff": 0.24792687311397918,
+      "trade_w_t": 0.9660362669614353
+    },
+    {
+      "label": "High vol (75-90 pct)",
+      "n_trades": 131008,
+      "n_q1": 971,
+      "n_q5": 718,
+      "taker_diff": 0.976557231991418,
+      "taker_t": 1.7627921441628143,
+      "trade_w_diff": -1.8449882797516035,
+      "trade_w_t": -5.215468008109756
+    },
+    {
+      "label": "Very high vol (90-100 pct)",
+      "n_trades": 237507,
+      "n_q1": 1203,
+      "n_q5": 1745,
+      "taker_diff": 26.02349612918865,
+      "taker_t": 20.94093854180282,
+      "trade_w_diff": 9.191905371724564,
+      "trade_w_t": 8.065128350244208
+    },
+    {
+      "label": "Excl extreme size",
+      "n_trades": 680549,
+      "n_q1": 1892,
+      "n_q5": 2147,
+      "taker_diff": 19.1672530214618,
+      "taker_t": 24.37035315505134,
+      "trade_w_diff": 2.964301239161588,
+      "trade_w_t": 5.595132176672904
+    }
+  ],
+  "summary": {
+    "baseline_trade_weighted_bps": 2.970356395942784,
+    "low_vol_trade_weighted_bps": 0.504100714757644,
+    "excl_extreme_trade_weighted_bps": 2.964301239161588,
+    "conclusion": "Effect concentrated in high-vol periods; robust to size exclusion"
+  }
+}

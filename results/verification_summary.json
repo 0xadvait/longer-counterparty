@@ -1,0 +1,327 @@
+{
+  "timestamp": "2026-01-18T12:41:28.279367",
+  "scripts_run": 6,
+  "scripts_success": 6,
+  "scripts_failed": 0,
+  "total_claims": 34,
+  "verified_claims": 34,
+  "unverified_claims": 0,
+  "verification_rate": 100.0,
+  "script_results": [
+    {
+      "script": "sign_test_multi_event.py",
+      "status": "SUCCESS",
+      "result_keys": [
+        "description",
+        "methodology",
+        "events",
+        "summary",
+        "sign_test",
+        "tex_verification"
+      ]
+    },
+    {
+      "script": "economic_magnitude_calculations.py",
+      "status": "SUCCESS",
+      "result_keys": [
+        "description",
+        "outage_characteristics",
+        "spread_impact",
+        "volume",
+        "costs",
+        "distributional_incidence",
+        "composition_during_outage",
+        "tex_verification"
+      ]
+    },
+    {
+      "script": "market_structure_outage.py",
+      "status": "SUCCESS",
+      "result_keys": [
+        "description",
+        "data_sources",
+        "normal_hours",
+        "outage_hour",
+        "changes",
+        "paradox",
+        "tex_verification"
+      ]
+    },
+    {
+      "script": "wallet_markout_persistence.py",
+      "status": "SUCCESS",
+      "result_keys": [
+        "description",
+        "sample",
+        "persistence_results",
+        "summary",
+        "interpretation",
+        "significance_check",
+        "tex_verification"
+      ]
+    },
+    {
+      "script": "randomization_inference_outage.py",
+      "status": "SUCCESS",
+      "result_keys": [
+        "description",
+        "coefficients",
+        "panel_a_collapsed_regression",
+        "panel_b_randomization_inference",
+        "panel_c_block_bootstrap",
+        "interpretation",
+        "bottom_line",
+        "tex_verification"
+      ]
+    },
+    {
+      "script": "rolling_oos_toxicity.py",
+      "status": "SUCCESS",
+      "result_keys": [
+        "description",
+        "methodology",
+        "rolling_results",
+        "summary",
+        "findings",
+        "implication",
+        "tex_verification"
+      ]
+    }
+  ],
+  "claims_by_file": {
+    "economic_magnitude_results.json": {
+      "total": 7,
+      "verified": 7,
+      "claims": [
+        {
+          "source_file": "economic_magnitude_results.json",
+          "claim": "$847M two-sided volume",
+          "value": "$847M",
+          "verified": true
+        },
+        {
+          "source_file": "economic_magnitude_results.json",
+          "claim": "$0.24M excess spread cost",
+          "value": "$0.24M",
+          "verified": true
+        },
+        {
+          "source_file": "economic_magnitude_results.json",
+          "claim": "$1.5M forced liquidation losses",
+          "value": "$1.5M",
+          "verified": true
+        },
+        {
+          "source_file": "economic_magnitude_results.json",
+          "claim": "$1.7M total excess cost",
+          "value": "$1.7M",
+          "verified": true
+        },
+        {
+          "source_file": "economic_magnitude_results.json",
+          "claim": "$0.9M welfare transfer",
+          "value": "$0.9M",
+          "verified": true
+        },
+        {
+          "source_file": "economic_magnitude_results.json",
+          "claim": "12% cost increase for uninformed",
+          "value": "12.0%",
+          "verified": true
+        },
+        {
+          "source_file": "economic_magnitude_results.json",
+          "claim": "28% cost decrease for informed",
+          "value": "28.0%",
+          "verified": true
+        }
+      ]
+    },
+    "market_structure_outage_results.json": {
+      "total": 6,
+      "verified": 6,
+      "claims": [
+        {
+          "source_file": "market_structure_outage_results.json",
+          "claim": "Maker participation +84%",
+          "value": "+84.2%",
+          "verified": true
+        },
+        {
+          "source_file": "market_structure_outage_results.json",
+          "claim": "HHI -13%",
+          "value": "-12.7%",
+          "verified": true
+        },
+        {
+          "source_file": "market_structure_outage_results.json",
+          "claim": "Quote updates -68%",
+          "value": "-68.0%",
+          "verified": true
+        },
+        {
+          "source_file": "market_structure_outage_results.json",
+          "claim": "Spreads +87%",
+          "value": "+86.9%",
+          "verified": true
+        },
+        {
+          "source_file": "market_structure_outage_results.json",
+          "claim": "Top-5 best-price share 78%\u219252%",
+          "value": "78.3%\u219252.1%",
+          "verified": true
+        },
+        {
+          "source_file": "market_structure_outage_results.json",
+          "claim": "Top-MPSC collapse -84%",
+          "value": "-84.3%",
+          "verified": true
+        }
+      ]
+    },
+    "wallet_markout_persistence_results.json": {
+      "total": 6,
+      "verified": 6,
+      "claims": [
+        {
+          "source_file": "wallet_markout_persistence_results.json",
+          "claim": "Day 1 vs Day 2: \u03c1 = 0.71",
+          "value": 0.71,
+          "verified": true
+        },
+        {
+          "source_file": "wallet_markout_persistence_results.json",
+          "claim": "Week 1 vs Week 2: \u03c1 = 0.78",
+          "value": 0.78,
+          "verified": true
+        },
+        {
+          "source_file": "wallet_markout_persistence_results.json",
+          "claim": "Month 1 vs Month 2: \u03c1 = 0.82",
+          "value": 0.82,
+          "verified": true
+        },
+        {
+          "source_file": "wallet_markout_persistence_results.json",
+          "claim": "First half vs Second half: \u03c1 = 0.84",
+          "value": 0.84,
+          "verified": true
+        },
+        {
+          "source_file": "wallet_markout_persistence_results.json",
+          "claim": "Over 78% top-quintile overlap (monthly)",
+          "value": "78.1%",
+          "verified": true
+        },
+        {
+          "source_file": "wallet_markout_persistence_results.json",
+          "claim": "Sample: 5,396 wallets with \u226520 trades",
+          "value": 5396,
+          "verified": true
+        }
+      ]
+    },
+    "randomization_inference_results.json": {
+      "total": 9,
+      "verified": 9,
+      "claims": [
+        {
+          "source_file": "randomization_inference_results.json",
+          "claim": "OLS HC1 t = 1.88",
+          "value": 1.88,
+          "verified": true
+        },
+        {
+          "source_file": "randomization_inference_results.json",
+          "claim": "Clustered by asset t = 2.25, N = 10",
+          "value": "t=2.25, N=10",
+          "verified": true
+        },
+        {
+          "source_file": "randomization_inference_results.json",
+          "claim": "Clustered by hour t = 10.02, N = 24",
+          "value": "t=10.02, N=24",
+          "verified": true
+        },
+        {
+          "source_file": "randomization_inference_results.json",
+          "claim": "Clustered by day t = 20.69, N = 3",
+          "value": "t=20.69, N=3",
+          "verified": true
+        },
+        {
+          "source_file": "randomization_inference_results.json",
+          "claim": "Two-way t = 2.25, N = 30",
+          "value": "t=2.25, N=30",
+          "verified": true
+        },
+        {
+          "source_file": "randomization_inference_results.json",
+          "claim": "Randomization inference p = 0.14",
+          "value": 0.14,
+          "verified": true
+        },
+        {
+          "source_file": "randomization_inference_results.json",
+          "claim": "Block bootstrap t = 10.75, 5,000 reps",
+          "value": "t=10.75, reps=5000",
+          "verified": true
+        },
+        {
+          "source_file": "randomization_inference_results.json",
+          "claim": "Raw coef = 17.55 bps",
+          "value": 17.55,
+          "verified": true
+        },
+        {
+          "source_file": "randomization_inference_results.json",
+          "claim": "Headline coef = 2.60 bps",
+          "value": 2.6,
+          "verified": true
+        }
+      ]
+    },
+    "rolling_oos_toxicity_results.json": {
+      "total": 6,
+      "verified": 6,
+      "claims": [
+        {
+          "source_file": "rolling_oos_toxicity_results.json",
+          "claim": "8 independent windows, all significant",
+          "value": "8/8 at p < 0.01",
+          "verified": true
+        },
+        {
+          "source_file": "rolling_oos_toxicity_results.json",
+          "claim": "Mean toxicity differential: 2.94 bps",
+          "value": "2.94 bps",
+          "verified": true
+        },
+        {
+          "source_file": "rolling_oos_toxicity_results.json",
+          "claim": "Std dev: 0.19 bps",
+          "value": "0.19 bps",
+          "verified": true
+        },
+        {
+          "source_file": "rolling_oos_toxicity_results.json",
+          "claim": "CV = 6.5%",
+          "value": "6.6%",
+          "verified": true
+        },
+        {
+          "source_file": "rolling_oos_toxicity_results.json",
+          "claim": "t-stats range: 7.31 to 8.64",
+          "value": "7.31 to 8.64",
+          "verified": true
+        },
+        {
+          "source_file": "rolling_oos_toxicity_results.json",
+          "claim": "Mean t-stat: 7.94",
+          "value": "7.94",
+          "verified": true
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "event_level_fragility": [
+    {
+      "event": "July 29 API Outage",
+      "n_assets": 10,
+      "coef": -0.15228075074015496,
+      "t_stat": -0.4357975926107534,
+      "r2": 0.023189427045985256,
+      "mean_spread_change": -55.31038986360063,
+      "mean_activity_drop": -139.2598773673438
+    },
+    {
+      "event": "July 30 Stress",
+      "n_assets": 10,
+      "coef": -0.2588105501549949,
+      "t_stat": -0.7578481031476552,
+      "r2": 0.06698290087153125,
+      "mean_spread_change": 22.037147011852056,
+      "mean_activity_drop": -220.35968513997196
+    }
+  ],
+  "pooled_regression": {
+    "n_observations": 20,
+    "coef": -0.20554565044757508,
+    "t_stat": -0.8659771805078733
+  },
+  "mechanism": {
+    "top_mpsc_fill_rate_change_pct": -24.436647980163734,
+    "other_fill_rate_change_pct": 54.73232617778877,
+    "top_mpsc_best_price_pre": 9.661380557775628,
+    "top_mpsc_best_price_stress": 18.24582942153535,
+    "other_best_price_pre": 2.446622251529139,
+    "other_best_price_stress": 8.402440186826803
+  }
+}

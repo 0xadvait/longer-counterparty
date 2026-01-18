@@ -1,0 +1,62 @@
+{
+  "horizons": {
+    "1m": {
+      "maker_vs_informed_bps": 0.36152327518236205,
+      "maker_vs_uninformed_bps": 3.3318796711251597,
+      "toxicity_differential_bps": 2.9703563959427974,
+      "t_stat": 43.18839243874332,
+      "p_value": 0.0,
+      "winner_loser_spread_bps": 2.9703563959427974,
+      "n_informed_trades": 259088,
+      "n_uninformed_trades": 426998
+    },
+    "10s": {
+      "maker_vs_informed_bps": 0.20414095774870736,
+      "maker_vs_uninformed_bps": 2.4182792431664484,
+      "toxicity_differential_bps": 2.214138285417741,
+      "t_stat": 44.974306185465736,
+      "p_value": 0.0,
+      "winner_loser_spread_bps": 2.214138285417741,
+      "n_informed_trades": 259093,
+      "n_uninformed_trades": 427021
+    },
+    "5m": {
+      "maker_vs_informed_bps": -3.825904554966931,
+      "maker_vs_uninformed_bps": 3.7586326764065183,
+      "toxicity_differential_bps": 7.584537231373449,
+      "t_stat": 68.70838054109386,
+      "p_value": 0.0,
+      "winner_loser_spread_bps": 7.584537231373449,
+      "n_informed_trades": 259042,
+      "n_uninformed_trades": 426710
+    }
+  },
+  "summary": {
+    "methodology": {
+      "markout_horizon": "1m",
+      "classification": "out-of-sample",
+      "train_date": 20250728,
+      "test_dates": [
+        20250729,
+        20250730
+      ],
+      "avoids_funding": true,
+      "min_trades_for_classification": 5
+    },
+    "primary_results": {
+      "maker_vs_informed_bps": 0.36152327518236205,
+      "maker_vs_uninformed_bps": 3.3318796711251597,
+      "toxicity_differential_bps": 2.9703563959427974,
+      "t_stat": 43.18839243874332,
+      "p_value": 0.0,
+      "winner_loser_spread_bps": 2.9703563959427974,
+      "n_informed_trades": 259088,
+      "n_uninformed_trades": 426998
+    },
+    "fee_analysis": {
+      "avg_taker_fee_bps": 2.9431117028593405,
+      "informed_net_profit_bps": -3.7810537052032456,
+      "uninformed_net_profit_bps": -6.8350614859503676
+    }
+  }
+}

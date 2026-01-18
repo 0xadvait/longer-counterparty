@@ -1,0 +1,27 @@
+{
+  "analysis_date": "2026-01-17T16:19:56.266750",
+  "data_sources": {
+    "node_fills": {
+      "records": 176985221,
+      "date_range": "20250727 to 20250930",
+      "unique_wallets": 182728
+    }
+  },
+  "concentration": {
+    "mean_hhi": 0.07071381274904853,
+    "mean_top1_share": 0.17875265414651995,
+    "mean_top5_share": 0.46178109728663513,
+    "mean_top10_share": 0.616270768105284,
+    "mean_n_makers": 2267.451776649746
+  },
+  "shadow_dmms": {
+    "total_makers": 66728,
+    "top1_share": 0.14100678499994837,
+    "top5_share": 0.3821922858270846,
+    "top10_share": 0.5123303858415624,
+    "top20_share": 0.6433806980880334,
+    "makers_for_50pct": 10,
+    "makers_for_80pct": 57,
+    "makers_for_90pct": 155
+  }
+}

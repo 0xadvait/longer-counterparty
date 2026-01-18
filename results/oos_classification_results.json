@@ -1,0 +1,65 @@
+{
+  "horizons": {
+    "1s": {
+      "q5_mean_profit": 0.5014040451389019,
+      "q1_mean_profit": -4.412164595747838,
+      "spread_bps": 4.913568640886741,
+      "t_stat": 146.33685416410682,
+      "p_value": 0.0,
+      "n_q5_trades": 477314,
+      "n_q1_trades": 258876
+    },
+    "10s": {
+      "q5_mean_profit": -0.1646453869782597,
+      "q1_mean_profit": -1.6622042100038494,
+      "spread_bps": 1.4975588230255896,
+      "t_stat": 27.237117022052985,
+      "p_value": 3.220752280680158e-163,
+      "n_q5_trades": 312823,
+      "n_q1_trades": 131384
+    },
+    "1m": {
+      "q5_mean_profit": 0.3249451448039331,
+      "q1_mean_profit": -3.8198765695581565,
+      "spread_bps": 4.14482171436209,
+      "t_stat": 40.25917092889485,
+      "p_value": 0.0,
+      "n_q5_trades": 145212,
+      "n_q1_trades": 121051
+    },
+    "5m": {
+      "q5_mean_profit": -1.9195114709814782,
+      "q1_mean_profit": -2.672237740809592,
+      "spread_bps": 0.7527262698281136,
+      "t_stat": 4.252594083184499,
+      "p_value": 2.113803401149324e-05,
+      "n_q5_trades": 156877,
+      "n_q1_trades": 109349
+    }
+  },
+  "summary": {
+    "all_spreads_positive": true,
+    "all_significant": true,
+    "verdict": "ROBUST"
+  },
+  "composition": {
+    "outage_hour": {
+      "total_fills": 177098,
+      "classified_fills": "152015",
+      "pct_classified": 85.8366554111283,
+      "pct_q5_informed": 12.778800438175473,
+      "pct_q1_uninformed": 10.214683395634056,
+      "informed_ratio": 1.2509535127964182
+    },
+    "normal_hours": {
+      "total_fills": 1542610,
+      "classified_fills": "1341179",
+      "pct_classified": 86.9421953701843,
+      "pct_q5_informed": 7.948347281555286,
+      "pct_q1_uninformed": 6.6766713556893835,
+      "informed_ratio": 1.190453998213523
+    },
+    "informed_share_change_pct": 4.830453156620187,
+    "uninformed_share_change_pct": 3.5380120399446726
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "iv_analysis": {
+    "ols": {
+      "informed_coef": -0.021342639481722644,
+      "informed_t": -1.4937009439193405,
+      "staleness_coef": 0.246787610979158,
+      "staleness_t": 4.504332402926873
+    },
+    "first_stage": {
+      "anchor_coef": 0.06697099889595369,
+      "anchor_t": 3.531510472917396,
+      "f_stat": 12.471566220325249
+    },
+    "second_stage": {
+      "predicted_informed_coef": 0.08713455021480582,
+      "predicted_informed_t": 0.39787832838384435
+    },
+    "reduced_form": {
+      "anchor_coef": 0.005835487866230617,
+      "anchor_t": 0.39787832838353326
+    },
+    "iv_estimate": 0.08713455021473766,
+    "n_obs": 3535
+  },
+  "replication": [
+    {
+      "split": "Time",
+      "subsample": "First Half",
+      "informed_coef": -0.06394307808698024,
+      "informed_t": -2.338112419438277,
+      "staleness_coef": 0.25062903039064355,
+      "staleness_t": 3.130209222750533,
+      "n_obs": 1764,
+      "r2": 0.4438245184468821
+    },
+    {
+      "split": "Time",
+      "subsample": "Second Half",
+      "informed_coef": 0.01671993224422017,
+      "informed_t": 0.9224035369834519,
+      "staleness_coef": 0.18059252685709282,
+      "staleness_t": 2.665790582196756,
+      "n_obs": 1771,
+      "r2": 0.5742018664559432
+    },
+    {
+      "split": "Asset Type",
+      "subsample": "Minor",
+      "informed_coef": -0.052351078084751174,
+      "informed_t": -1.917919416935359,
+      "staleness_coef": 0.3846931080124473,
+      "staleness_t": 4.699138751743641,
+      "n_obs": 1515,
+      "r2": 0.4364853282185739
+    },
+    {
+      "split": "Asset Type",
+      "subsample": "Major",
+      "informed_coef": 0.0017960271049799513,
+      "informed_t": 0.13296776159908047,
+      "staleness_coef": 0.09881962790853177,
+      "staleness_t": 1.4118590912289122,
+      "n_obs": 2020,
+      "r2": 0.375318889180707
+    }
+  ]
+}

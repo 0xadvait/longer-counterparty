@@ -1,0 +1,33 @@
+{
+  "analysis_description": "Information Food Chain: Counterparty-Level Adverse Selection",
+  "data": {
+    "n_paired_trades": 97749615,
+    "n_takers_classified": 33577,
+    "n_makers_classified": 23361,
+    "n_makers_with_counterparty_data": 4186,
+    "assets": [
+      "BTC",
+      "ETH",
+      "SOL",
+      "HYPE"
+    ]
+  },
+  "taker_classification": {
+    "n_informed": 6716,
+    "n_uninformed": 6716,
+    "informed_mean_profit_bps": 53.84503797405147,
+    "uninformed_mean_profit_bps": -70.6599394831593
+  },
+  "counterparty_adverse_selection": {
+    "maker_profit_vs_informed_bps": -38.67813717463073,
+    "maker_profit_vs_uninformed_bps": 40.47567364948373,
+    "toxicity_differential_bps": 79.15381082411444,
+    "t_statistic": 38.752630975577546,
+    "p_value": 5.2703212444452894e-281
+  },
+  "food_chain_spread": {
+    "winner_loser_spread_vs_slow_makers": 80.23841908703673,
+    "winner_loser_spread_vs_hft_makers": 94.2273543960066,
+    "mean_spread": 90.26015026685779
+  }
+}

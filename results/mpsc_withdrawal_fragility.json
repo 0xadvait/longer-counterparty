@@ -1,0 +1,187 @@
+{
+  "summary": {
+    "avg_high_mpsc_withdrawal": 0.3597720412448163,
+    "avg_low_mpsc_withdrawal": 0.3407790309106099,
+    "withdrawal_differential": 0.018993010334206417,
+    "differential_t_stat": 0.15956510807854718,
+    "differential_p_value": 0.8767472526663131
+  },
+  "fragility_regressions": {
+    "Raw Withdrawal Rate": {
+      "coef": -0.8450749699786662,
+      "t_stat": -4.470668097226625,
+      "r2": 0.7141517048844437,
+      "p_value": 0.002081385698415644
+    },
+    "MPSC-Weighted Withdrawal": {
+      "coef": 0.019467091208306836,
+      "t_stat": 0.055071684995570594,
+      "r2": 0.00037896764011280393,
+      "p_value": 0.957431872369962
+    },
+    "High-MPSC Withdrawal": {
+      "coef": -0.6888939765280725,
+      "t_stat": -2.6880786880291843,
+      "r2": 0.47457491089666015,
+      "p_value": 0.02757860188926878
+    },
+    "TOB Activity Collapse": {
+      "coef": 0.5041444694229704,
+      "t_stat": 1.6511162222432392,
+      "r2": 0.2541616460497683,
+      "p_value": 0.13732022435851948
+    }
+  },
+  "asset_level": [
+    {
+      "coin": "BTC",
+      "n_pre_makers": 323,
+      "n_outage_makers": 124,
+      "raw_withdrawal": 0.6160990712074303,
+      "mpsc_weighted_withdrawal": 0.3670947030497592,
+      "high_mpsc_withdrawal": 0.47761194029850745,
+      "low_mpsc_withdrawal": 0.6776315789473685,
+      "withdrawal_differential": -0.20001963864886102,
+      "tob_collapse": 0.8709300939391509,
+      "pre_spread": 20656.701082460033,
+      "outage_spread": 4.9505753659817575,
+      "spread_widening": -20651.75050709405,
+      "spread_widening_pct": -99.97603404654876
+    },
+    {
+      "coin": "ETH",
+      "n_pre_makers": 330,
+      "n_outage_makers": 160,
+      "raw_withdrawal": 0.5151515151515151,
+      "mpsc_weighted_withdrawal": 0.4118612283169245,
+      "high_mpsc_withdrawal": 0.4925373134328358,
+      "low_mpsc_withdrawal": 0.0,
+      "withdrawal_differential": 0.4925373134328358,
+      "tob_collapse": 0.6910008688697405,
+      "pre_spread": 20656.701082460033,
+      "outage_spread": 9.286774103966877,
+      "spread_widening": -20647.414308356067,
+      "spread_widening_pct": -99.95504231742089
+    },
+    {
+      "coin": "SOL",
+      "n_pre_makers": 225,
+      "n_outage_makers": 108,
+      "raw_withdrawal": 0.52,
+      "mpsc_weighted_withdrawal": 0.3344575604272063,
+      "high_mpsc_withdrawal": 0.3877551020408163,
+      "low_mpsc_withdrawal": 0.0,
+      "withdrawal_differential": 0.3877551020408163,
+      "tob_collapse": 0.4993318732025799,
+      "pre_spread": 20656.701082460033,
+      "outage_spread": 9.260879120775579,
+      "spread_widening": -20647.440203339258,
+      "spread_widening_pct": -99.95516767617536
+    },
+    {
+      "coin": "HYPE",
+      "n_pre_makers": 2050,
+      "n_outage_makers": 1913,
+      "raw_withdrawal": 0.06682926829268288,
+      "mpsc_weighted_withdrawal": 0.37679199350825,
+      "high_mpsc_withdrawal": 0.08704453441295547,
+      "low_mpsc_withdrawal": 0.0,
+      "withdrawal_differential": 0.08704453441295547,
+      "tob_collapse": 0.9575861999459906,
+      "pre_spread": 20656.701082460033,
+      "outage_spread": 86.41176804143328,
+      "spread_widening": -20570.2893144186,
+      "spread_widening_pct": -99.58167682392032
+    },
+    {
+      "coin": "ARB",
+      "n_pre_makers": 29,
+      "n_outage_makers": 9,
+      "raw_withdrawal": 0.6896551724137931,
+      "mpsc_weighted_withdrawal": 0.47457627118644075,
+      "high_mpsc_withdrawal": 0.3333333333333333,
+      "low_mpsc_withdrawal": 0.7857142857142857,
+      "withdrawal_differential": -0.4523809523809524,
+      "tob_collapse": 0.2828025397279025,
+      "pre_spread": 20656.701082460033,
+      "outage_spread": 22.78803525349245,
+      "spread_widening": -20633.91304720654,
+      "spread_widening_pct": -99.88968211737912
+    },
+    {
+      "coin": "AVAX",
+      "n_pre_makers": 48,
+      "n_outage_makers": 20,
+      "raw_withdrawal": 0.5833333333333333,
+      "mpsc_weighted_withdrawal": 0.5526315789473683,
+      "high_mpsc_withdrawal": 0.6,
+      "low_mpsc_withdrawal": 0.6666666666666666,
+      "withdrawal_differential": -0.06666666666666665,
+      "tob_collapse": 0.4881933123335218,
+      "pre_spread": 20656.701082460033,
+      "outage_spread": 11.530621884121949,
+      "spread_widening": -20645.17046057591,
+      "spread_widening_pct": -99.94417975146132
+    },
+    {
+      "coin": "DOGE",
+      "n_pre_makers": 120,
+      "n_outage_makers": 73,
+      "raw_withdrawal": 0.3916666666666667,
+      "mpsc_weighted_withdrawal": 0.3161434977578475,
+      "high_mpsc_withdrawal": 0.38461538461538464,
+      "low_mpsc_withdrawal": 0.0,
+      "withdrawal_differential": 0.38461538461538464,
+      "tob_collapse": 0.6401029424621196,
+      "pre_spread": 20656.701082460033,
+      "outage_spread": 14.231129463311694,
+      "spread_widening": -20642.469952996722,
+      "spread_widening_pct": -99.93110647529583
+    },
+    {
+      "coin": "LINK",
+      "n_pre_makers": 44,
+      "n_outage_makers": 23,
+      "raw_withdrawal": 0.4772727272727273,
+      "mpsc_weighted_withdrawal": 0.43277310924369744,
+      "high_mpsc_withdrawal": 0.36363636363636365,
+      "low_mpsc_withdrawal": 0.4444444444444444,
+      "withdrawal_differential": -0.08080808080808077,
+      "tob_collapse": 0.4814921859435782,
+      "pre_spread": 20656.701082460033,
+      "outage_spread": 12.556835605438481,
+      "spread_widening": -20644.144246854594,
+      "spread_widening_pct": -99.93921180562515
+    },
+    {
+      "coin": "OP",
+      "n_pre_makers": 24,
+      "n_outage_makers": 9,
+      "raw_withdrawal": 0.625,
+      "mpsc_weighted_withdrawal": 0.23841059602649006,
+      "high_mpsc_withdrawal": 0.2,
+      "low_mpsc_withdrawal": 0.8333333333333334,
+      "withdrawal_differential": -0.6333333333333333,
+      "tob_collapse": 0.4293450370801118,
+      "pre_spread": 20656.701082460033,
+      "outage_spread": 7.424342267268155,
+      "spread_widening": -20649.276740192763,
+      "spread_widening_pct": -99.96405843199439
+    },
+    {
+      "coin": "SUI",
+      "n_pre_makers": 281,
+      "n_outage_makers": 139,
+      "raw_withdrawal": 0.5053380782918149,
+      "mpsc_weighted_withdrawal": 0.29047619047619044,
+      "high_mpsc_withdrawal": 0.2711864406779661,
+      "low_mpsc_withdrawal": 0.0,
+      "withdrawal_differential": 0.2711864406779661,
+      "tob_collapse": 0.7749887706239245,
+      "pre_spread": 20656.701082460033,
+      "outage_spread": 23.32866919970488,
+      "spread_widening": -20633.372413260327,
+      "spread_widening_pct": -99.88706488462714
+    }
+  ]
+}
